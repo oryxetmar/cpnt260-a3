@@ -1,0 +1,201 @@
+body {
+ dispay: flex;
+ background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/coffee-stained-paper-texture-3.jpg");
+font-family: 'Dongle', sans-serif;
+font-color: #70400f;
+}
+
+/* nav bar design */
+
+.top-bar a {
+  /* remove link color and underline */
+  color: #81573d;
+  text-decoration: none;
+  display: block;
+  
+}
+
+i {
+  padding: 20px;
+}
+
+ul {
+  /* remove list styles */
+  display: flex;
+  flex-direction: row;
+ list-style-type: none;
+  padding: 0;
+}
+
+.dropdown {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #eee5d7;
+}
+
+/* nav links */
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  row-gap: 10px;
+  font-size: 2.5rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e8f8f5;
+  padding: 0 1rem;
+  background-color: #e8f8f5; opacity: .75; filter: alpha(opacity=20);
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  color: white;
+  flex-direction: row;
+}
+
+.logo-wrapper a {
+  display: flex;
+  align-items: center;
+  transition: 300ms color;
+  color:  #81573d ;
+}
+.logo-wrapper a:hover {
+ color:  #81573d; opacity: 0.75;      filter: alpha(opacity=50);
+ transform: scale(1.2);
+ flex-grow: 2;
+}
+.logo-wrapper p {
+ font-size: clamp(2.5rem, 6vw, 2rem)
+}
+.logo-wrapper i {
+  font-size: clamp(2.5rem, 6vw, 2rem);
+}
+
+.sub-menu-parent { position: relative; }
+
+.sub-menu { 
+  visibility: hidden; 
+  opacity: 2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 20px 20px #70400f;
+}
+sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; 
+  opacity: 10;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+  color: #70400f ;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 20px 20px #70400f;
+}
+
+header {
+  text-align: center;
+  height: 12vh;
+  padding: 40;
+  font-size: clamp(2rem, 2vw, 1rem);
+  color:  #70400f ;
+   border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 20px 20px #70400f;
+}
+
+/* gallery */
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 2px;
+  margin: 0 auto;
+  with: 80%;
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: clamp(2.5rem, 4vw, 2rem);
+  color: #70400f ;
+}
+
+section {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: clamp(2.5rem, 4vw, 2rem);
+  padding: 2rem;
+  color: #70400f ;
+  gap: 5px;
+}
+
+
+figure {
+  display: flex;
+  background-color:  #e8f8f5;
+  font-family: 'Dongle', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 20px 20px #70400f;
+  max-width: 420px;
+}
+
+img {
+  width: 100%;
+}
+
+
+figcaption {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  margin: 2rem;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+ align-items: center;
+   height: 5rem;
+  margin-top: 10px;
+  gap: 1rem;
+  font-size: 3rem;
+  justify-content: space-between;
+  color: #392719;
+  background-color:  #e8f8f5;
+   border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 20px 20px #70400f;
+  
+}
+
+footer p {
+  display: flex;
+  justify-content: flex-start;
+padding: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+ color: #70400f ;
+}
+
+a {
+  color: #70400f ;
+}
